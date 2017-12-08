@@ -22,7 +22,7 @@ word.prototype.findLetter = function(letter){
 	if (this.guessesMade.indexOf(lowerLetter) != -1) {
 		return "Duplicate";
 	} 
-	this.guessesMade += lowerLetter; //Record the guess
+	this.guessesMade += lowerLetter; 
 	for(let i=0; i<this.letters.length;i++){
 		if(this.letters[i].value.toLowerCase() == lowerLetter){
 		this.letters[i].show = true;
